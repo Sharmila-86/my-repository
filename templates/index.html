@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug  5 21:27:19 2020
+
+@author: sharm
+"""
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="C:\Users\sharm\Desktop\HTML\styleknn.css">
+    <title>KNN API</title>
+
+  </head>
+  <body>
+    <div>
+    <h1>CANCER PREDICTION ANALYSIS</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+     <input type="text" name="radius mean" placeholder="Radius Mean" required="required" />
+       <input type="text" name="area mean" placeholder="Area Mean" required="required" />
+   <input type="text" name="smoothness mean" placeholder="Smoothness Mean" required="required" />
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</div>
+
+
+
+
+     </form>
+
+    <br>
+<div>
+  {{prediction text}}
+</div>
+
+
+
+
+
+</body>
+</html>
